@@ -16,4 +16,10 @@ import '@angular/router';
 window['jQuery'] = require('jquery');
 window['$'] = window['jQuery'];
 window['moment'] = require('moment');
-import 'bootstrap/dist/js/bootstrap.min'
+import 'bootstrap/dist/js/bootstrap.min';
+
+//import 'ng2-auto-complete/dist';
+
+import 'ag-grid-ng2';
+import 'ag-grid';
+

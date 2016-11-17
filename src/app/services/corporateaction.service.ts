@@ -9,10 +9,6 @@ export class CorporateActionService {
 
     }
 
-    eventTypesUrl:string = '/api/eventTypes';
-
-    getEventTypes():Observable<string[]> {
-        return this.http.get(this.eventTypesUrl).map( data => data.json());
-    }
+    eventTypesUrl:string = '/api/corporateaction';
 
 }

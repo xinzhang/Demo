@@ -14,23 +14,36 @@
 		</div>
 		<div id="navbar" class="navbar-collapse collapse">
 			<ul class="nav navbar-nav">
-				<li class="active"><a href="#">Home</a></li>
-				<li><a href="#about">Add New</a></li>
-				<li><a href="#contact">List</a></li>
+				<li class="active"><a routerLink="/home">Home</a></li>
 				<li class="dropdown">
-					<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Static Data <span class="caret"></span></a>
+					<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Corporate Actions <span class="caret"></span></a>
 					<ul class="dropdown-menu">
-						<li><a href="#">Asset</a></li>
-						<li><a href="#">Issuer</a></li>
-						<li><a href="#">IssuerContact</a></li>
-						<li role="separator" class="divider"></li>
-						<li class="dropdown-header">Nav header</li>
-						<li><a href="#">Event Types</a></li>
+						<li><a routerLink="/corporateaction-add">Add New</a></li>
+						<li><a routerLink="/corporateaction-list">List</a></li>						
+						<li><a routerLink="/corporateaction-upload">Upload Document</a></li>
+					</ul>
+				</li>
+				<li class="dropdown">
+					<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Archive <span class="caret"></span></a>
+					<ul class="dropdown-menu">
+						<li><a routerLink="/archive/trade">Trades</a></li>
+						<li><a routerLink="/archive/transfer">Transfers</a></li>
+					</ul>
+				</li>
+				
+				<li class="dropdown">
+					<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Data Setup <span class="caret"></span></a>
+					<ul class="dropdown-menu">
+						<li><a routerLink="/staticdata-asset">Asset</a></li>
+						<li><a routerLink="/staticdata-issuer">Issuer</a></li>
+						<li><a href="#">Issuer Contact</a></li>
+						<li role="separator" class="divider"></li>						
+						<li><a routerLink="/staticdata-eventtypes">Event Types</a></li>
 					</ul>
 				</li>
 			</ul>
 			<ul class="nav navbar-nav navbar-right">
-				<li><a href="#">About</a></li>
+				<li><a routerLink="/about">About</a></li>
 			</ul>
 		</div>
 		<!--/.nav-collapse -->

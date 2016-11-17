@@ -11,6 +11,4 @@ export class CorporateActionModel {
         public Subject: string
     ){        
     }
-
-
 } 

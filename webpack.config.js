@@ -12,7 +12,8 @@ var webpackConfig = {
   },
 
   output: {
-    path: './dist',
+    //path: './dist',
+    path: '../Ausmaq.Operations.Web'
   },
 
   plugins: [
